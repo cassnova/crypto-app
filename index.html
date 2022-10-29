@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Crypto App</title>
+  </head>
+  <body>
+    <main class="container">
+      <h1 class="container__title">Check your Cryptocurrency, now!</h1>
+      <form action="" class="container__form" id="form-search">
+        <select name="coin" id="coin">
+          <option value="">Choose your favorite coin</option>
+          <option value="USD">Dollar</option>
+          <option value="CLP">Chilean Peso</option>
+          <option value="GBP">Pound</option>
+          <option value="EUR">Euro</option>
+        </select>
+
+        <select name="crypto" id="crypto">
+          <option value="">Choose your favorite Crypto</option>
+        </select>
+
+        <input type="submit" value="Find It" />
+        <div class="container__form-response" id="crypto-response"></div>
+        <div class="container__form-error" id="error-response"></div>
+      </form>
+    </main>
+
+    <script src="/app.js"></script>
+  </body>
+</html>
