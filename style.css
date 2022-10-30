@@ -37,17 +37,17 @@ body {
   box-shadow: 0px 0px 39px 33px rgba(0, 0, 0, 0.1);
   text-align: center;
 }
-.container__form-select {
+.container__form--select {
   height: 40px;
   border-radius: 20px;
   font-size: 15px;
   margin-top: 20px;
   transition: 0.5s ease-in-out;
 }
-.container__form-select:hover {
+.container__form--select:hover {
   background-color: #f47c7c;
 }
-.container__form-btn {
+.container__form--btn {
   width: 100px;
   height: 35px;
   margin-top: 15px;
@@ -59,15 +59,15 @@ body {
   letter-spacing: 3px;
   box-shadow: 0px 0px 21px 16px rgba(0, 0, 0, 0.1);
 }
-.container__form-btn:hover {
+.container__form--btn:hover {
   background-color: #f47c7c;
   transition: 0.5s;
 }
-.container__form-response {
+.container__form--response {
   margin-top: 20px;
   font-size: 18px;
 }
-.container__result-p {
+.container__result--p {
   font-weight: bold;
   margin-left: 8px;
 }
