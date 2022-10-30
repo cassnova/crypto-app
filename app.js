@@ -49,11 +49,11 @@ function showCryptos(data) {
   const result = document.createElement("div");
   result.classList.add("container__result");
   result.innerHTML = `
-    <p>Price: ${PRICE}</p>
-    <p>Highest price of the day: ${HIGHDAY}</p>
-    <p>Lowest price of the day: ${LOWDAY}</p>
-    <p>Variation of the last 24 hours: ${CHANGEPCT24HOUR}%</p>
-    <p>Last update: ${LASTUPDATE}</p>
+    <p>Price: <span class="container__result-p">${PRICE}</span></p>
+    <p>Highest price of the day: <span class="container__result-p">${HIGHDAY}</span></p>
+    <p>Lowest price of the day: <span class="container__result-p">${LOWDAY}</span></p>
+    <p>Variation of the last 24 hours: <span class="container__result-p">${CHANGEPCT24HOUR}%</span></p>
+    <p>Last update: <span class="container__result-p">${LASTUPDATE}</span></p>
   `;
   cryptoResponse.appendChild(result);
 }
