@@ -19,6 +19,7 @@ document.addEventListener("DOMContentLoaded", () => {
   crypto.addEventListener("change", getValue);
 });
 
+// Function that detect if there are a error and show you a message.
 function submitForm(e) {
   e.preventDefault();
   const { coin, crypto } = searchObj;
@@ -29,6 +30,7 @@ function submitForm(e) {
   checkingApi(coin, crypto);
 }
 
+// This function allows us to obtain the different values of the object dynamically.
 function checkingApi(coin, crypto) {
   const url = `https://min-api.cryptocompare.com/data/pricemultifull?fsyms=${crypto}&tsyms=${coin}`;
   fetch(url)
@@ -43,6 +45,7 @@ function checkingApi(coin, crypto) {
     });
 }
 
+// Function that receives all the data and that is inserted in the dom.
 function showCryptos(data) {
   clearHTML();
   const { PRICE, HIGHDAY, LOWDAY, CHANGEPCT24HOUR, LASTUPDATE } = data;
@@ -58,6 +61,7 @@ function showCryptos(data) {
   cryptoResponse.appendChild(result);
 }
 
+// Function that insert a error in the html.
 function showError(message) {
   const error = document.createElement("p");
   error.classList.add("error");
@@ -72,7 +76,7 @@ function getValue(e) {
   searchObj[e.target.name] = e.target.value;
 }
 
-// This function "getApiCryptos" get the endpoint from the crypto compare api.
+// This function "getApiCryptos" get the endpoint and data from the crypto compare api.
 function getApiCryptos() {
   fetch(url)
     .then((res) => {
